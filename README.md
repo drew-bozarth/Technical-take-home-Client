@@ -22,7 +22,7 @@ A repo containing the client side of the project.
 
 ## Known Errors:
 
-###
+### The online user list will not appear when a user first joins a chat room. Once another user leaves or joins that room, then the list for the original user will update.
 
 ## References:
 
@@ -34,14 +34,25 @@ A repo containing the client side of the project.
 
 ## Instructions:
 
-### I began by :
+### I began by setting up a react app in the client folder:
 
 ```
 npx create-react-app
 ```
 
-### Install dependencies for the client side:
+### I removed most of the boiler plate code included in the react app that was formed
+
+### Then I installed dependencies for the client side:
 
 ```
-npm install
+npm install socket.io-client
+npm install react-scroll-to-bottom
 ```
+
+### Then, once the server is running, run the react app in the client folder with:
+
+```
+npm start
+```
+
+### This will open up a browser tab to http://localhost:3000 where the react app will be running
