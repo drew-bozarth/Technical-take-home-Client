@@ -3,8 +3,8 @@ import ScrollToBottom from "react-scroll-to-bottom";
 
 function Chat({ socket, username, room }) {
   const [currentMessage, setCurrentMessage] = useState("");
-  const [userList, setUserList] = useState([]);
   const [messageList, setMessageList] = useState([]);
+  const [userList, setUserList] = useState([]);
 
   const sendMessage = async () => {
     if (currentMessage !== "") {
@@ -25,9 +25,20 @@ function Chat({ socket, username, room }) {
   };
 
   useEffect(() => {
+    socket.on("updateUsersList", (users) => {
+        console.log(users);
+        // empty list first
+        setUserList((list) => []);
+        // for each look add each element to global list
+        users.forEach(function (user) {
+          setUserList((list) => [...list, user]);
+        });
+    });
+  }, [socket]);
+
+  useEffect(() => {
     socket.on("receive_message", (data) => {
       setMessageList((list) => [...list, data]);
-      setUserList((list) => [...list, data.author]);
     });
   }, [socket]);
 
@@ -37,11 +48,11 @@ function Chat({ socket, username, room }) {
         <p>Room: {room}</p>
       </div>
       <div>
-        {userList.map((author) => {
-                return (
-                    <p>{author}</p>
-                );
-            })}
+        {userList.map((person) => {
+          return (
+            <p>{person}</p>
+          );
+        })}
       </div>
       <div className="chat-body">
         <ScrollToBottom className="message-container">

@@ -72,6 +72,20 @@ body {
   font-weight: 700;
   line-height: 45px;
 }
+.chat-list {
+  height: 45px;
+  border-radius: 6px;
+  background: #09c03d;
+  position: relative;
+  cursor: pointer;
+}
+.chat-list p {
+  display: block;
+  padding: 0 1em 0 2em;
+  color: #fff;
+  font-weight: 300;
+  line-height: 45px;
+}
 
 .chat-window .chat-body {
   height: calc(450px - (45px + 70px));
