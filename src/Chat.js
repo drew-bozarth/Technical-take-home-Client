@@ -47,6 +47,9 @@ function Chat({ socket, username, room }) {
       <div className="chat-header">
         <p>Room: {room}</p>
       </div>
+      <div className="chat-list">
+        <p>Online:</p>
+      </div>
       <div>
         {userList.map((person) => {
           return (
@@ -80,7 +83,7 @@ function Chat({ socket, username, room }) {
         <input
           type="text"
           value={currentMessage}
-          placeholder="Hey..."
+          placeholder="Message"
           onChange={(event) => {
             setCurrentMessage(event.target.value);
           }}

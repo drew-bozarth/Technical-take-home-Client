@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Technical-Take-Home Assigment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A repo containing the client side of the project.
 
-## Available Scripts
+### Drew Bozarth
 
-In the project directory, you can run:
+### dbozarth@chapman.edu
 
-### `npm start`
+## Source Files:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### App.css
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### App.js
 
-### `npm test`
+### Chat.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### index.js
 
-### `npm run build`
+### reportWebVitals
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Users.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Known Errors:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###
 
-### `npm run eject`
+## References:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### PedroTech - https://www.youtube.com/watch?v=NU-HfZY3ATQ - video on Socket.io tutorials with ReactJS and NodeJS.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Web Dev Journey - https://github.com/webdevjourneyWDJ/Chat-App - used Users.js class to implement showing online users
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Web Dev Journey - https://www.youtube.com/watch?v=f0jht1G1_ro&t=625s - video on displaying online users in a chat room
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Instructions:
 
-## Learn More
+### I began by :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npx create-react-app
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Install dependencies for the client side:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+npm install
+```

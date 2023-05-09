@@ -12,6 +12,7 @@ function App() {
   const [showChat, setShowChat] = useState(false);
 
   const joinRoom = () => {
+    // Only allow to join room if all fields have input
     if (username !== "" && password !== "" && room !== "") {
       socket.emit("join_room", username, room);
       setShowChat(true);
